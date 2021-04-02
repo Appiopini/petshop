@@ -1,0 +1,7 @@
+<%= simple_form_for pet do |f| %>
+  <%= f.input :owner, label: 'Dono' %>
+  <%= f.input :name, label: 'Nome' %>
+  <%= f.input :type, label: 'Raça' %>
+  <%= f.input :care, label: 'Cuidados' %>
+  <%= f.submit class: 'btn btn-primary btn-sm' %>
+<% end %>
