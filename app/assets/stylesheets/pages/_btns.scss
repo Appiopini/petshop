@@ -1,0 +1,45 @@
+.ativo_white {
+
+  width: 225px;
+  height: 40px;
+  left: 70px;
+  top: 359px;
+
+  /* branco */
+
+  background: #FFFFFF;
+  opacity: 0.65;
+  /* texto padrão */
+
+  border: 1px solid #8872B2;
+  box-sizing: border-box;
+  /* button */
+
+  box-shadow: 0px 2px 6px rgba(47, 10, 119, 0.35), inset 0px -3px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+  text-decoration: none;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  /* identical to box height, or 300% */
+
+  /* #5F4A87 */
+
+  color: #5F4A87;
+  background-color: white;
+  border: 2px solid #5F4A87;
+  border-radius: 30px;
+}
+
+.ativo_white:hover {
+  transition-duration: 0.4s;
+  background: #EFEDF3;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+

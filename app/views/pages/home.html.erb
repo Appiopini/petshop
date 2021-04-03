@@ -1,2 +1,16 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <p class="row justify-content-center h1_title">Seja bem vindo a Casa dos Pets</p>
+    <p class="row justify-content-center h1_text">Aqui seu filhote será mimado</p>
+
+    <div class="row justify-content-sm-around">
+      <%= link_to new_pet_path do %>
+        <button class="ativo_white">Cadastrar novo Pet</button>
+      <% end %>
+
+      <%= link_to pets_path do %>
+            <button class="ativo_white">Todos os Pets</button>
+      <% end %>
+    </div>
+  </div>
+</div>
