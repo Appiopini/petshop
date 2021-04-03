@@ -14,7 +14,8 @@
           <%= f.input :owner, label: 'Nome do Dono' %>
           <%= f.input :name, label: 'Nome do Pet' %>
           <%= f.input :race, label: 'Raça' %>
-          <%= f.input :care, label: 'Cuidados' %>
+          <%= f.label :care, label: 'Cuidados' %>
+          <%= f.select(:care, options_for_select([['Entrada', 'Entrada'], ['Aguardando', 'Aguardando'], ['Banho', 'Banho'], ['Limpo', 'Limpo']]), { include_blank: true }) %>
         </div>
       <% end %>
     </div>
