@@ -32,6 +32,11 @@
   border-radius: 30px;
 }
 
+.ativo_white:hover {
+  transition-duration: 0.4s;
+  background: #EFEDF3;
+}
+
 a {
   text-decoration: none;
   color: inherit;

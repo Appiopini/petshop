@@ -1,13 +1,21 @@
 <div class="row justify-content-center">
   <div class="col-md-6">
-    <h1>Todos os Pets</h1>
-    <ul class="list-group">
+    <h1 class="h1_title row justify-content-center">Todos os Pets</h1>
+    <ul class="row justify-content-center list-group">
       <% @pets.each do |pet| %>
-        <li class="list-group-item">
-          <%= link_to pet.name, pet_path(pet) %>
+        <li class="h2_text list-group-item">
+          <%= link_to pet.name, pet_path(pet), class: 'row justify-content-center' %>
         </li>
       <% end %>
     </ul>
-    <%= link_to "Cadastrar Conta", new_pet_path, class: 'btn btn-primary' %>
+    <p></p>
+    <div class="row justify-content-sm-around">
+      <%= link_to new_pet_path do %>
+        <button class="ativo_white">Cadastrar Pet</button>
+      <% end %>
+      <%= link_to root_path do %>
+        <button class="ativo_white">Home</button>
+      <% end %>
+    </div>
   </div>
 </div>

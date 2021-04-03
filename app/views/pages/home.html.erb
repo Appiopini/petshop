@@ -1,15 +1,16 @@
 <div class="row justify-content-center">
   <div class="col-md-6">
-    <h1>Seja bem vindo a Casa dos Pets</h1>
-    <p>Aqui seu filhote será mimado</p>
+    <p class="row justify-content-center h1_title">Seja bem vindo a Casa dos Pets</p>
+    <p class="row justify-content-center h1_text">Aqui seu filhote será mimado</p>
 
-    <%= link_to new_pet_path do %>
-      <button class="ativo_white">Cadastrar novo Pet</button>
-    <% end %>
+    <div class="row justify-content-sm-around">
+      <%= link_to new_pet_path do %>
+        <button class="ativo_white">Cadastrar novo Pet</button>
+      <% end %>
 
-    <%= link_to pets_path do %>
-          <button class="ativo_white">Todos os Pets</button>
-    <% end %>
-
+      <%= link_to pets_path do %>
+            <button class="ativo_white">Todos os Pets</button>
+      <% end %>
+    </div>
   </div>
 </div>

@@ -1,6 +1,10 @@
 td, th {
-  background-color: #EFEDF3;
-  border: 2px solid white;
+  border-collapse: collapse;
+  background-color: #F4F0EB;
   text-align: center;
-  padding: 8px 32px
+  padding: 8px 44px
+}
+
+th {
+  background-color: #FFF9F3;
 }

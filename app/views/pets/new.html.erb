@@ -1,13 +1,22 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-6">
-      <%= link_to pets_path(@pet) do %>
-        <div class="btn btn-warning"> Todos os Pets <i class="fas fa-edit"></i>
+      <h1 class="h1_title row justify-content-center">Cadastrar Pet</h1>
+      <%= simple_form_for [@pet] do |f| %>
+        <div class="row justify-content-sm-around">
+          <%= link_to pets_path(@pet) do %>
+            <button class="ativo_white">Todos os Pets</button>
+          <% end %>
+
+          <%= f.submit "Adiacionar Pet", class: 'ativo_white' %>
+        </div>
+        <div class="h3_text">
+          <%= f.input :owner, label: 'Nome do Dono' %>
+          <%= f.input :name, label: 'Nome do Pet' %>
+          <%= f.input :race, label: 'Raça' %>
+          <%= f.input :care, label: 'Cuidados' %>
         </div>
       <% end %>
-      <h1>Cadastrar Pet</h1>
-        <%= render 'form', pet: @pet %>
-      <p> </p>
     </div>
   </div>
 </div>
