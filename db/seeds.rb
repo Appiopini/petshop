@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+puts 'Creating 100 fake pets...'
+Pet.destroy_all
+100.times do
+  pet = Pet.new(
+    owner:   Faker::Superhero.name,
+    name:    Faker::Creature::Dog.name,
+    race:    Faker::Creature::Dog.breed,
+  )
+  pet.save!
+end
+puts 'Finished!'
