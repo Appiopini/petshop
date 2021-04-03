@@ -1,20 +1,15 @@
-h1 {
-  font-family: Roboto Condensed;
+.h1_title {
+  font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
+  font-weight: normal;
+  font-size: 32px;
   line-height: 48px;
-  /* identical to box height, or 200% */
-
-  display: flex;
-  align-items: center;
-
-  /* #5F4A87 */
+  /* identical to box height, or 150% */
 
   color: #5F4A87;
 }
 
-h2 {
+.h2_text {
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
@@ -22,25 +17,18 @@ h2 {
   line-height: 48px;
   /* identical to box height, or 267% */
 
-  display: flex;
-  align-items: center;
   text-transform: uppercase;
-
-  /* #5F4A87 */
 
   color: #5F4A87;
 }
 
-h3 {
+.h3_text {
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 48px;
   /* identical to box height, or 300% */
-
-  display: flex;
-  align-items: center;
 
   /* #5F4A87 */
 

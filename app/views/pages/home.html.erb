@@ -3,9 +3,13 @@
     <h1>Seja bem vindo a Casa dos Pets</h1>
     <p>Aqui seu filhote será mimado</p>
 
-    <%= link_to "Cadastrar novo Pet", new_pet_path, class: 'btn btn-primary' %>
-    
-    <%= link_to "Todos os Pets", pets_path, class:'btn_ativo_white' %>
+    <%= link_to new_pet_path do %>
+      <button class="ativo_white">Cadastrar novo Pet</button>
+    <% end %>
+
+    <%= link_to pets_path do %>
+          <button class="ativo_white">Todos os Pets</button>
+    <% end %>
 
   </div>
 </div>

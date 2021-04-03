@@ -1,46 +1,42 @@
 
 <div class="row justify-content-center">
   <div class="col-md-6">
-    <h1><%= @pet.name %></h1>
-    <table class="table table-bordered">
-      <tbody>
-        <tr>
-          <th scope="row">Dono</th>
-          <td><%= @pet.owner %></td>
-        </tr>
-        <tr>
-          <th scope="row">Nome</th>
-          <td><%= @pet.name %></td>
-        </tr>
-        <tr>
-          <th scope="row">Raça</th>
-          <td><%= @pet.race %></td>
-        </tr>
-        <tr>
-          <th scope="row">Cuidados</th>
-          <td><%= @pet.care %></td>
-        </tr>
-      </tbody>
-        <%= link_to root_path do %>
-          <div class="btn_ativo_white"> Home
-          </div>
-        <% end %>
+    <p class="h1_title row justify-content-center"><%= @pet.name %></p>
+      <table class="row justify-content-center">
+          <tr class="h2_text">
+            <th>Dono</th>
+            <th>Nome</th>
+            <th>Raça</th>
+            <th>Cuidados</th>
+          </tr>
+          <tr class="h3_text">
+            <td><%= @pet.owner %></td>
+            <td><%= @pet.name %></td>
+            <td><%= @pet.race %></td>
+            <td><%= @pet.care %></td>
+          </tr>
+      </table>
+          <p></p>
+        <div class="row justify-content-sm-around">
+          <%= link_to root_path do %>
+            <button class="ativo_white">Home</button>
+          <% end %>
 
-        <%= link_to pets_path(@pet) do %>
-          <div class="btn btn-warning btn-sm"> Todos os Pets <i class="fas fa-edit"></i>
-          </div>
-        <% end %>
+          <%= link_to pets_path(@pet) do %>
+            <button class="ativo_white">Todos os Pets</button>
+          <% end %>
+        </div>
+        <p></p>
+        <div class="row justify-content-center justify-content-sm-around">
 
-        <%= link_to edit_pet_path(@pet) do %>
-          <div class="btn btn-warning btn-sm"> Edit Pet <i class="fas fa-edit"></i>
-          </div>
-        <% end %>
+          <%= link_to edit_pet_path(@pet) do %>
+            <button class="ativo_white">Edit Pet</button>
+          <% end %>
 
-        <%= link_to pet_path(@pet), method: :delete, data: { confirm: "Are you sure?" } do %>
-          <div class="btn btn-danger btn-sm"> Remover Pet <i class="fas fa-trash"></i>
-          </div>
-        <% end %>
-    </table>
+          <%= link_to pet_path(@pet), method: :delete, data: { confirm: "Are you sure?" } do %>
+            <button class="ativo_white">Remover Pet</button>
+          <% end %>
+        </div>
   </div>
 </div>
 
