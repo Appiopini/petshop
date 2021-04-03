@@ -27,17 +27,17 @@
         <% end %>
 
         <%= link_to pets_path(@pet) do %>
-          <div class="btn btn-warning btn-sm"> Todas as Contas <i class="fas fa-edit"></i>
+          <div class="btn btn-warning btn-sm"> Todos os Pets <i class="fas fa-edit"></i>
           </div>
         <% end %>
       
         <%= link_to edit_pet_path(@pet) do %>
-          <div class="btn btn-warning btn-sm"> Edit <i class="fas fa-edit"></i>
+          <div class="btn btn-warning btn-sm"> Edit Pet <i class="fas fa-edit"></i>
           </div>
         <% end %>
 
         <%= link_to pet_path(@pet), method: :delete, data: { confirm: "Are you sure?" } do %>
-          <div class="btn btn-danger btn-sm"> Delete <i class="fas fa-trash"></i>
+          <div class="btn btn-danger btn-sm"> Remover Pet <i class="fas fa-trash"></i>
           </div>
         <% end %>
     </table>

@@ -1,0 +1,23 @@
+.btn_ativo_white {
+  width: 172px;
+  height: 48px;
+  left: 190px;
+  top: 515px;
+
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 48px;
+  /* identical to box height, or 300% */
+
+  display: flex;
+  align-items: center;
+
+  /* #5F4A87 */
+
+  color: #5F4A87;
+  background-color: white;
+  border: 2px solid #5F4A87;
+  border-radius: 30px;
+}
