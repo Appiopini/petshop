@@ -1,6 +1,13 @@
 <div class="row justify-content-center">
   <div class="col-md-6">
     <h1>Editar PET</h1>
-      <%= render 'form', pet: @pet %>
+      <%= simple_form_for [@pet] do |f| %>
+          <%= f.input :owner, label: 'Nome do Dono' %>
+          <%= f.input :name, label: 'Nome do Pet' %>
+          <%= f.input :race, label: 'Raça' %>
+          <%= f.input :care, label: 'Cuidados' %>
+          <%= f.input :photo, as: :file, label: 'Photo 📷' %>
+          <%= f.submit "Update⚙️", class: 'btn btn-success btn-sm' %>
+      <% end %>
   </div>
 </div>

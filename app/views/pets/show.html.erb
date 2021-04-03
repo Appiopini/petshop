@@ -14,7 +14,7 @@
         </tr>
         <tr>
           <th scope="row">Raça</th>
-          <td><%= @pet.type %></td>
+          <td><%= @pet.race %></td>
         </tr>
         <tr>
           <th scope="row">Cuidados</th>
@@ -30,7 +30,7 @@
           <div class="btn btn-warning btn-sm"> Todos os Pets <i class="fas fa-edit"></i>
           </div>
         <% end %>
-      
+
         <%= link_to edit_pet_path(@pet) do %>
           <div class="btn btn-warning btn-sm"> Edit Pet <i class="fas fa-edit"></i>
           </div>
